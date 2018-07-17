@@ -13,19 +13,22 @@ namespace WebApplication1
     {
         SellerValidations sellerObj = new SellerValidations();
         List<State> states = null;
+        List<City> cities = null;
+        static int stateId = 1;
         protected void Page_Load(object sender, EventArgs e)
         {
             Session["userId"] = null;
             Session["userName"] = null;
             states = sellerObj.GetStates();
+            cities = sellerObj.GetCities(stateId);
             if (!IsPostBack)
             {
                 ddlState.DataTextField = "StateName";
                 ddlState.DataValueField = "StateName";
                 ddlState.DataSource = states;
-                // ddlState.SelectedIndex = 0;
+                 ddlState.SelectedIndex = 0;
                 ddlState.DataBind();
-                ddlCity.DataSource = sellerObj.GetCities(1);
+                ddlCity.DataSource =cities;
                 ddlCity.DataValueField = "CityName";
                 ddlCity.DataBind();
             }
@@ -37,7 +40,9 @@ namespace WebApplication1
             {
                 
                 State state = states[ddlState.SelectedIndex];
-                ddlCity.DataSource = sellerObj.GetCities(state.StateId);
+                stateId = state.StateId;
+                cities = sellerObj.GetCities(stateId);
+                ddlCity.DataSource = cities;
                 ddlCity.SelectedIndex = 0;
                 ddlCity.DataValueField = "CityName";
                 ddlCity.DataBind();
