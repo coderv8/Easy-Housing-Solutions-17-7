@@ -42,7 +42,7 @@ namespace WebApplication1
                     int sellerId = sellerObj.GetSellerId(login.UserName);
                     Session["userId"] = sellerId;
                     Session["userName"] = login.UserName;
-                    Response.Redirect("DisplayResults.aspx");
+                    Response.Redirect("SellerHome.aspx");
                 }
                 else if (login.UserType.ToLower() == "buyer")
                 {

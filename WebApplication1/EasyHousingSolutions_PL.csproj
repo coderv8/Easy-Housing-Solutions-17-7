@@ -221,6 +221,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="SellerHome.aspx" />
     <Content Include="SellerRegistration.aspx" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
@@ -406,6 +407,13 @@
     </Compile>
     <Compile Include="sample.aspx.designer.cs">
       <DependentUpon>sample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SellerHome.aspx.cs">
+      <DependentUpon>SellerHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SellerHome.aspx.designer.cs">
+      <DependentUpon>SellerHome.aspx</DependentUpon>
     </Compile>
     <Compile Include="SellerRegistration.aspx.cs">
       <DependentUpon>SellerRegistration.aspx</DependentUpon>
