@@ -172,6 +172,7 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Admin.aspx" />
     <Content Include="BuyerRegistration.aspx" />
+    <Content Include="Cart.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -187,6 +188,7 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Images\home_back.jpeg" />
     <Content Include="Login.aspx" />
+    <Content Include="PostProperty.aspx" />
     <Content Include="sample.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -368,6 +370,13 @@
     <Compile Include="BuyerRegistration.aspx.designer.cs">
       <DependentUpon>BuyerRegistration.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -400,6 +409,13 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="PostProperty.aspx.cs">
+      <DependentUpon>PostProperty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PostProperty.aspx.designer.cs">
+      <DependentUpon>PostProperty.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sample.aspx.cs">
       <DependentUpon>sample.aspx</DependentUpon>

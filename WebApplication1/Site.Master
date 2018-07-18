@@ -18,10 +18,10 @@
 <body>
 
 
-    <!-- navigation bar -->
+    
     <nav class="navbar navbar-default navbar-expand-lg navbar-light">
         <div class="navbar-header d-flex col">
-           <%-- <a class="navbar-brand" href="Default.aspx"><b>EHS</b></a>--%>
+          
             <asp:HyperLink ID="hplHome" runat="server" class="navbar-brand" Text="EHS" NavigateUrl="~/Default.aspx"></asp:HyperLink>
             <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle navbar-toggler ml-auto">
                 <span class="navbar-toggler-icon"></span>
@@ -38,15 +38,7 @@
                      <asp:HyperLink ID="hplHome1" runat="server" class="nav-link" Text="Home" NavigateUrl="~/Default.aspx"></asp:HyperLink>
                 </li>
                 <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                <%--	<li class="nav-item dropdown">
-				<a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Services <b class="caret"></b></a>
-				<ul class="dropdown-menu">					
-					<li><a href="#" class="dropdown-item">Web Design</a></li>
-					<li><a href="#" class="dropdown-item">Web Development</a></li>
-					<li><a href="#" class="dropdown-item">Graphic Design</a></li>
-					<li><a href="#" class="dropdown-item">Digital Marketing</a></li>
-				</ul>
-			</li>--%>
+               
 
 
                 <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
@@ -61,29 +53,12 @@
                         <asp:HyperLink ID="hrlLogin" runat="server" class="nav-link" Text="Login" NavigateUrl="~/Login.aspx"></asp:HyperLink></li>
                     <li id="divProfile" runat="server" visible="false">
                         <asp:Label ID="lblProfile" class="navbar-brand" Width="20%" runat="server"></asp:Label></li>
-                    <%--<a href="Login.aspx" class="nav-link">Login</a>--%>
-                    <%--<a data-toggle="dropdown" class="nav-link dropdown-toggle" href="Login.aspx">Login</a>--%>
-                    <%--<ul class="dropdown-menu form-wrapper">					
-					<li>
-						<form action="/examples/actions/confirmation.php" method="post">
-                            <p class="hint-text">Sign in with your Credentials</p>
-						<div class="or-seperator"><b>:)</b></div>
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Username" required="required">
-							</div>
-							<div class="form-group">
-								<input type="password" class="form-control" placeholder="Password" required="required">
-							</div>
-							<input type="submit" class="btn btn-primary btn-block" value="Login">
-						</form>
-					</li>
-				</ul>--%>
+                    
 			</li>
                 <li class="nav-item" id="divSignup" runat="server" visible="true">
                     <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Signup <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <%--<li><a href="#" class="dropdown-item">Seller</a></li>
-					<li><a href="#" class="dropdown-item">Buyer</a></li>--%>
+                       
 
                         <li runat="server" visible="true">
                             <asp:HyperLink ID="hrlSeller" runat="server" class="dropdown-item" Text="Seller" NavigateUrl="~/SellerRegistration.aspx"></asp:HyperLink>
@@ -96,8 +71,7 @@
                 <li class="nav-item dropdown">
                     <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Menu <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <%--<li><a href="#" class="dropdown-item">Post Property</a></li>
-					<li><a href="#" class="dropdown-item">View Cart</a></li>--%>
+                       
                     </ul>
                 </li>
 
@@ -107,14 +81,13 @@
         </div>
 
     </nav>
-    <!-- navigation bar ends here -->
+   
 
 
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
-                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
-                <%--Framework Scripts--%>
+               
                 <asp:ScriptReference Name="MsAjaxBundle" />
                 <asp:ScriptReference Name="jquery" />
                 <asp:ScriptReference Name="bootstrap" />
@@ -128,7 +101,7 @@
                 <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
                 <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
                 <asp:ScriptReference Name="WebFormsBundle" />
-                <%--Site Scripts--%>
+               
             </Scripts>
         </asp:ScriptManager>
 
